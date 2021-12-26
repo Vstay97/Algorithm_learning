@@ -8,7 +8,7 @@ public class Dome05_Variable {
     static final double PI = 3.1415926;
     // final static double PI = 3.1415926;
 
-    // 属性:变量
+    // 属性: 变量
     // 实例变量:从属于对象;
     String name;
     int age;
