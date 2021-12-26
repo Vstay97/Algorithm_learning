@@ -1,6 +1,6 @@
 package hello.demo;
 
-public class DataType {
+public class Dome02_DataType {
     public static void main(String[] args) {
         // 八大基本数据类型
 
