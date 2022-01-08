@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Dome08_Scanner_next {
     public static void main(String[] args) {
+        /*
+        * next方式:
+        *   空格停止
+        * */
         // 创建一个扫描器对象,用于接收键盘数据
         Scanner scanner = new Scanner(System.in);
 
