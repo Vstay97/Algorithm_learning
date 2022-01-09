@@ -1,4 +1,4 @@
-package hello.demo;
+package hello.base;
 
 public class Dome01_Hello {
     public static void main(String[] args){

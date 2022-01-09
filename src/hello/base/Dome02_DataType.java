@@ -1,4 +1,4 @@
-package hello.demo;
+package hello.base;
 
 public class Dome02_DataType {
     public static void main(String[] args) {

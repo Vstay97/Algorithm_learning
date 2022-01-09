@@ -1,4 +1,4 @@
-package hello.demo;
+package hello.base;
 
 public class Dome05_Variable {
     // 类变量:static

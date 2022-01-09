@@ -1,6 +1,4 @@
-package hello.demo;
-
-import java.util.Scanner;
+package hello.base;
 
 public class Dome11_ForPlus {
     public static void main(String[] args) {
