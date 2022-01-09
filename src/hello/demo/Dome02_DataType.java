@@ -5,13 +5,16 @@ public class Dome02_DataType {
         // 八大基本数据类型
 
         // 整数
-        int num1 = 10;  //最常用
+        //最常用
+        int num1 = 10;
         byte num2 = 20;
         short num3 = 30;
-        long num4 = 30L;    //Long类型要在数字后面加个L
+        //Long类型要在数字后面加个L
+        long num4 = 30L;
 
         // 小数:浮点数
-        float num5 = 50.1F; //默认是double,float类型要在后面加L
+        //默认是double,float类型要在后面加L
+        float num5 = 50.1F;
         double num6 = 3.13290123;
 
         // 字符
