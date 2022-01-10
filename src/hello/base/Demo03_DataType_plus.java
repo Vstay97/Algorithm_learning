@@ -1,6 +1,6 @@
 package hello.base;
 
-public class Dome03_DataType_plus {
+public class Demo03_DataType_plus {
     public static void main(String[] args) {
         // 整数拓展:    进制  二进制0b   十进制 八进制0    十六进制0x
         int i = 10;

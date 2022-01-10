@@ -1,6 +1,6 @@
 package hello.base;
 
-public class Dome02_DataType {
+public class Demo02_DataType {
     public static void main(String[] args) {
         // 八大基本数据类型
 

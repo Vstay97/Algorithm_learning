@@ -1,6 +1,6 @@
 package hello.base;
 
-public class Dome05_Variable {
+public class Demo05_Variable {
     // 类变量:static
     static double salary = 2500;
 
@@ -20,7 +20,7 @@ public class Dome05_Variable {
         System.out.println(i);
 
         // 变量类型 变量名字 = new Dome05_Variable();
-        Dome05_Variable dome05 = new Dome05_Variable();
+        Demo05_Variable dome05 = new Demo05_Variable();
         System.out.println(dome05.age);
         System.out.println(dome05.name);
 

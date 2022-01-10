@@ -5,7 +5,7 @@ package hello.base;
  * @version 1.8
  * @since 1.8
  */
-public class Dome07_Doc {
+public class Demo07_Doc {
     // 属性
     String name;
 

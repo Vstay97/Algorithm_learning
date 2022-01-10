@@ -2,7 +2,7 @@ package hello.base;
 
 import java.util.Scanner;
 
-public class Dome09_Scanner_nextLine {
+public class Demo09_Scanner_nextLine {
     public static void main(String[] args) {
         /*
         * nextLine方式输入:

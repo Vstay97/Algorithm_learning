@@ -1,6 +1,6 @@
 package hello.array;
 
-public class Dome02_MemoryAnalysis {
+public class Demo02_MemoryAnalysis {
     public static void main(String[] args) {
         // 1.声明数组
         int[] nums;

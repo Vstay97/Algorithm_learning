@@ -2,7 +2,7 @@ package hello.base;
 
 import java.util.Scanner;
 
-public class Dome08_Scanner_next {
+public class Demo08_Scanner_next {
     public static void main(String[] args) {
         /*
         * next方式:

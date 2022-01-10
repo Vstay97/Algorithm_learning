@@ -2,7 +2,7 @@ package hello.base;
 
 import java.util.Scanner;
 
-public class Dome10_Scanner_plus {
+public class Demo10_Scanner_plus {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入");
