@@ -5,6 +5,6 @@ package hello.oop.demo04.inherit;
  * 就会拥有父类的全部Public方法
  */
 public class Student extends Person {
-    // Ctrl+H 查看继承树
-
+	// Ctrl+H 查看继承树
+	
 }

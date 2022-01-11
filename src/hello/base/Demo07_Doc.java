@@ -6,17 +6,18 @@ package hello.base;
  * @since 1.8
  */
 public class Demo07_Doc {
-    // 属性
-    String name;
-
-    // 方法
-    /**
-     * @author Vstay
-     * @param args
-     * @return
-     * @throws Exception
-     */
-    public String test(String args) throws Exception{
-        return name;
-    }
+	// 属性
+	String name;
+	
+	// 方法
+	
+	/**
+	 * @param args
+	 * @return
+	 * @throws Exception
+	 * @author Vstay
+	 */
+	public String test(String args) throws Exception {
+		return name;
+	}
 }
