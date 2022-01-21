@@ -82,21 +82,23 @@ public class RangeSumQuery2dImmutable {
 
         public NumMatrix(int[][] matrix) {
             preRowSums = new int[matrix.length][matrix[0].length + 1];
+            int m = matrix.length;
+            int n = matrix[0].length+1;
             if (matrix.length > 0) {
-                for (int j = 0; j < matrix.length; j++) {
-                    for (int i = 1; i < matrix[0].length + 1; i++) {
+                for (int j = 0; j < m; j++) {
+                    for (int i = 1; i < n; i++) {
                         preRowSums[j][i] = preRowSums[j][i - 1] + matrix[j][i - 1];
                     }
                 }
             }
         }
 
-        public int sumRegion(int row1, int col1, int row2, int col2) {
+        public int sumRegion(int x1, int y1, int x2, int y2) {
             int ans = 0;
             int rowSums = 0;
 
-            for (int i = row1; i <= row2; i++) {
-                rowSums += preRowSums[i][(col2) + 1] - preRowSums[i][col1];
+            for (int i = x1; i <= x2; i++) {
+                rowSums += preRowSums[i][(y2) + 1] - preRowSums[i][y1];
             }
 
             return rowSums;
