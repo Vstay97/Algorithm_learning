@@ -78,17 +78,17 @@ public class RangeSumQuery2dImmutable {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class NumMatrix {
-        private int[][] preRowSums;
+        private int[][] preSums;
 
         public NumMatrix(int[][] matrix) {
             int m = matrix.length+1;
             int n = matrix[0].length+1;
             if (m > 0) {
-                preRowSums = new int[m][n];
+                preSums = new int[m][n];
                 for (int i = 1; i < m; i++) {
                     for (int j = 1; j < n; j++) {
                         // 计算每个矩阵 (0,0,i,j) 的元素和
-                        preRowSums[i][j] = preRowSums[i - 1][j] + preRowSums[i][j - 1] + matrix[i - 1][j - 1] - preRowSums[i - 1][j - 1];
+                        preSums[i][j] = preSums[i - 1][j] + preSums[i][j - 1] + matrix[i - 1][j - 1] - preSums[i - 1][j - 1];
                     }
                 }
             }
@@ -96,7 +96,7 @@ public class RangeSumQuery2dImmutable {
 
         public int sumRegion(int x1, int y1, int x2, int y2) {
             int nums = 0;
-            nums = preRowSums[x2 + 1][y2 + 1] - preRowSums[x1][y2 + 1] - preRowSums[x2 + 1][y1] + preRowSums[x1][y1];
+            nums = preSums[x2 + 1][y2 + 1] - preSums[x1][y2 + 1] - preSums[x2 + 1][y1] + preSums[x1][y1];
             return nums;
         }
     }

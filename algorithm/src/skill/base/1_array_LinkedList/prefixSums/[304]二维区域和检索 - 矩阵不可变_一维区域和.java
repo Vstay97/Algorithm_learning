@@ -83,7 +83,7 @@ public class RangeSumQuery2dImmutable {
         public NumMatrix(int[][] matrix) {
             preRowSums = new int[matrix.length][matrix[0].length + 1];
             int m = matrix.length;
-            int n = matrix[0].length+1;
+            int n = matrix[0].length + 1;
             if (matrix.length > 0) {
                 for (int j = 0; j < m; j++) {
                     for (int i = 1; i < n; i++) {
