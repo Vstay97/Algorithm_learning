@@ -54,7 +54,6 @@ public class SubarraySumEqualsK {
              * 2. 查一查在当前数之前，有多少个前缀和等于 preSum - k   ==> 查询preSums[j]的数量
              * 3. 维护 preSums的定义 (key:前缀和,value: key对应的前缀和的个数)
              * */
-
             for (int num : nums) {
                 // 计算当前(i)的前缀和
                 sums += num;
