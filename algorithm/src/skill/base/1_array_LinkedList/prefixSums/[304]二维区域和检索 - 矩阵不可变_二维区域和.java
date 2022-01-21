@@ -81,12 +81,12 @@ public class RangeSumQuery2dImmutable {
         private int[][] preRowSums;
 
         public NumMatrix(int[][] matrix) {
-            int m = matrix.length;
-            int n = matrix[0].length;
+            int m = matrix.length+1;
+            int n = matrix[0].length+1;
             if (m > 0) {
-                preRowSums = new int[m + 1][n + 1];
-                for (int i = 1; i <= m; i++) {
-                    for (int j = 1; j <= n; j++) {
+                preRowSums = new int[m][n];
+                for (int i = 1; i < m; i++) {
+                    for (int j = 1; j < n; j++) {
                         // 计算每个矩阵 (0,0,i,j) 的元素和
                         preRowSums[i][j] = preRowSums[i - 1][j] + preRowSums[i][j - 1] + matrix[i - 1][j - 1] - preRowSums[i - 1][j - 1];
                     }
