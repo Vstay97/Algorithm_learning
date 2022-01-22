@@ -1,0 +1,43 @@
+### 解题思路
+
+分析题意使用**差分数组**，在某一区间[i, j]乘车即在该区间内的乘客数量+val，乘客在时刻j时下车 则在时刻j时数量就-val。
+
+因为不需要恢复原数组，考虑仅用一个变量记录每一时刻的乘客人数，只有有某一个时刻的乘客人数大于capacity则无法接送所有的乘客。
+
+同时，因为题目没有给出**最远站点**的位置，此处使用了一个for循环对最远站点进行查找，但其实也可以根据数量直接设置最远站点为1001.
+
+### 代码
+
+* java
+
+```java
+class Solution {
+    public boolean carPooling(int[][] trips, int capacity) {
+        int m = trips.length;
+        int max = 0;
+        // 找到最远的站点
+        for(int[] trip : trips){
+            max = Math.max(trip[2], max);
+        }
+        int[] diff = new int[max + 1];
+        for(int i = 0; i < m; i++){
+            int np = trips[i][0];
+            int sl = trips[i][1];
+            int el = trips[i][2];
+            // 上车
+            diff[sl] += np;
+            // 下车
+            diff[el] -=  np;
+        }
+        int start = diff[0];
+        if(start > capacity) return false;
+        // 判断每一时刻下的乘客数量
+        for(int i = 1; i <= max; i++){
+            start = start + diff[i];
+            if(start > capacity) return false;
+        }
+        return true;
+    }
+}
+```
+
