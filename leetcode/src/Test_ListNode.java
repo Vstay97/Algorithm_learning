@@ -37,43 +37,16 @@ public class Test_ListNode {
     public static void main(String[] args) {
         Test_ListNode test = new Test_ListNode();
 
-        int[] x = {1, 2, 4};
-        int[] y = {1, 3, 4};
+        int[] x = {1, 2, 3, 4, 5};
         ListNode list1 = createLinkedList(x);
-        ListNode list2 = createLinkedList(y);
-        printLinkedList(list1);
-        printLinkedList(list2);
 
-        ListNode res = test.mergeTwoLists(list1, list2);
+        printLinkedList(list1);
+
+
+        ListNode res = test.middleNode(list1);
         printLinkedList(res);
     }
 
-
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        if (list1 == null || list2 == null)
-            return list1 == null ? list2 : list1;
-        ListNode dummy = new ListNode(-1);
-        ListNode p = dummy;
-        ListNode p1 = list1, p2 = list2;
-
-        while (p1 != null && p2 != null) {
-            if(p1.val <= p2.val){
-                p.next = p1;
-                p1 = p1.next;
-            }
-            else if (p1.val > p2.val){
-                p.next = p2;
-                p2 = p2.next;
-            }
-            p =p.next;
-        }
-        if (p2 == null)
-            p.next = p1;
-        if (p1 == null)
-            p.next = p2;
-
-        return dummy.next;
-    }
 }
 
 
