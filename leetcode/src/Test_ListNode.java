@@ -43,8 +43,8 @@ public class Test_ListNode {
         printLinkedList(list1);
 
 
-        ListNode res = test.middleNode(list1);
-        printLinkedList(res);
+//        ListNode res = test.middleNode(list1);
+//        printLinkedList(res);
     }
 
 }
