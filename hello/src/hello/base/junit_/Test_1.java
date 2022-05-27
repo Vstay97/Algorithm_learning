@@ -1,6 +1,5 @@
 package hello.base.junit_;
 
-import org.junit.Test;
 
 public class Test_1 {
     public static void main(String[] args) {

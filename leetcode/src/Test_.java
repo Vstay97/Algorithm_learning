@@ -1,17 +1,21 @@
-import java.util.Stack;
-
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Scanner;
 public class Test_ {
     public static void main(String[] args) {
-        Test_ test_ = new Test_();
-        int m = 3;
-        int n = 3;
+        LinkedList<LinkedList<Integer>> res = new LinkedList<>();
+        LinkedList<Integer> track = new LinkedList<>();
 
-        int[][] dp = new int[n+1][m+1];
-        for (int i = 1; i <= n; i++) {
-            dp[1][i] += dp[1][i-1] + 1;
-        }
+        track.add(1);
+        track.add(2);
+        track.add(3);
 
+        res.add(track);
+        System.out.println("res: " + res);
+        track.add(4);
+        System.out.println("res: " + res);
     }
-
-
 }
+
+
+
